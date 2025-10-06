@@ -1,0 +1,277 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RelaxViet - Camping Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/tent.css" />
+  </head>
+  <body>
+    <!----------------------------------------------------------------------------- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container-fluid">
+          <!-- Navbar Brand -->
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/logo/logo_relaxviet.png"
+              alt="RelaxViet"
+              class="logo"
+              width="100"
+              height="60"
+            />
+          </a>
+
+          <!-- Toggler Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Content -->
+          <div
+            class="collapse navbar-collapse text-start w-100"
+            id="navbarContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <form
+                  class="search-form d-flex"
+                  action="search.php"
+                  method="GET"
+                >
+                  <input
+                    class="form-control search-input"
+                    type="search"
+                    name="q"
+                    placeholder="Tìm kiếm sản phẩm, thương hiệu và danh mục"
+                    aria-label="Search"
+                  />
+                  <button class="btn search-btn" type="submit">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Trang Chủ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sản Phẩm
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="tent.html">Lều Dã Ngoại</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="tarpaulin.html">Bạt Tăng</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="campingChair.html"
+                      >Ghế Bàn Cắm Trại</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="bed.html">Nệm Hơi- Giường</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="rickshaw.html">Xe Kéo</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="showroom.html">Hệ thống cửa hàng</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Tạp chí</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Hỗ trợ
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="contact.html">Liên Hệ</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Login Button (Desktop View) -->
+            <ul class="navbar-nav ms-auto d-none d-lg-flex">
+              <li class="nav-item">
+                <a class="nav-link" aria-label="Login" href="signIn.html"
+                  >Đăng Nhập</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container mt-4">
+        <div class="header">
+          <h1>Lều cắm trại</h1>
+          <select class="form-select">
+            <option selected>Mới nhất</option>
+            <option>Giá cao nhất</option>
+            <option>Giá thấp nhất</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mt-2">
+            <div class="card">
+              <img
+                src="images/xe-keo/xe-keo-cam-trai-da-ngoai-tanxianzhen-txz-1009.png"
+                class="card-img-top"
+                alt="Makeup Product"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  Xe kéo cắm trại, dã ngoại Tanxianzhen TXZ-1009
+                </h5>
+                <div class="rating">
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  <i class="fas fa-star"> </i>
+                  (0)
+                </div>
+                <div class="product-price">2.400.000 vnd</div>
+              </div>
+              <div class="card-footer text-center">
+                <a href="xe-txz1009.html"
+                  ><button class="btn btn-primary">Mua Ngay</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap JS (necessary for collapse functionality) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <!---------------------------------------------------------------------Footer -->
+  <footer>
+    <div class="container footer">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="logo">
+            <img alt="Company Logo" src="images/logo/logo_relaxviet.png" />
+          </div>
+          <div class="contact-info">
+            <p>CÔNG TY TNHH THƯ GIÃN VIỆT</p>
+            <p>
+              Giấy ĐKKD : 0317805028 , ngày cấp : 25/04/2023 , nơi cấp : Sở
+              KH&amp;ĐT TPHCM
+            </p>
+            <p>
+              Địa chỉ: 267/5 Lê Thị Riêng (TA28) , P. Thới An, Quận 12, TP.HCM
+            </p>
+            <p>Điện thoại: 0938 513 828 - 0919 011 300</p>
+            <p>Email: relaxvietco@gmail.com</p>
+            <p>Giờ làm việc: Thứ 2 đến thứ 7: 8:30-18:00</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="contact-info"><b>Sản phẩm </b></div>
+          <div class="guide-list">
+            <ul>
+              <li>Lều cắm trại</li>
+              <li>Bạt tăng</li>
+              <li>Võng - Giường dã ngoại</li>
+              <li>Bếp dã ngoại</li>
+              <li>Bàn ghế dã ngoại</li>
+              <li>Xe kéo</li>
+              <li>Phụ kiện cắm trại</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="contact-info"><b>Hướng dẫn</b></div>
+          <div class="guide-list">
+            <ul>
+              <li>Chính sách thanh toán</li>
+              <li>Chính sách bảo mật</li>
+              <li>Chính sách đổi / trả hàng</li>
+              <li>Chính sách vận chuyển</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 float-end">
+          <div class="contact-info"><b>Chia sẻ chúng tôi</b></div>
+          <div class="socials social-icons ml-2 mt-3">
+            <a href="#">
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube"> </i>
+            </a>
+            <a href="#">
+              <i class="fas fa-envelope"> </i>
+            </a>
+            <a href="#">
+              <i class="fas fa-mobile-alt"> </i>
+            </a>
+          </div>
+          <div class="mt-2">
+            <img
+              alt="Certification Badge"
+              height="100"
+              src="images/logo/bo-cong-thuong.png"
+              width="250"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="copyright">Copyright by Relax Viet Co., LTD @ 2023</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

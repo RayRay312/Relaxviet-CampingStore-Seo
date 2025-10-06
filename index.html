@@ -1,0 +1,1010 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RelaxViet - Camping Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container-fluid">
+          <!-- Navbar Brand -->
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/logo/logo_relaxviet.png"
+              alt="RelaxViet"
+              class="logo"
+              width="100"
+              height="60"
+            />
+          </a>
+
+          <!-- Toggler Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Content -->
+          <div
+            class="collapse navbar-collapse text-start w-100"
+            id="navbarContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <form
+                  class="search-form d-flex"
+                  action="search.php"
+                  method="GET"
+                >
+                  <input
+                    class="form-control search-input"
+                    type="search"
+                    name="q"
+                    placeholder="Tìm kiếm sản phẩm, thương hiệu và danh mục"
+                    aria-label="Search"
+                  />
+                  <button class="btn search-btn" type="submit">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Trang Chủ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sản Phẩm
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="tent.html">Lều Dã Ngoại</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="tarpaulin.html">Bạt Tăng</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="campingChair.html"
+                      >Ghế Bàn Cắm Trại</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="bed.html">Nệm Hơi- Giường</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="rickshaw.html">Xe Kéo</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="showroom.html">Hệ thống cửa hàng</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Tạp chí</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Hỗ trợ
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="contact.html">Liên Hệ</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Login Button (Desktop View) -->
+            <ul class="navbar-nav ms-auto d-none d-lg-flex">
+              <li class="nav-item">
+                <a class="nav-link" aria-label="Login" href="signIn.html"
+                  >Đăng Nhập</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- -------------------------------slider bar-------------------------------------------------------- -->
+    <section class="section_slider container mt-4">
+      <div class="row-sliderbar row">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/banner/banner-cam-trai-relaxviet (1).jpg"
+                  class="d-block w-100"
+                  alt="Banner Relaxviet 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/banner/banner-cam-trai-relaxviet (6).png"
+                  class="d-block w-100"
+                  alt="Banner Relaxviet 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/banner/banner-cam-trai-relaxviet (1).png"
+                  class="d-block w-100"
+                  alt="Banner Relaxviet 3"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Side Banners -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="mb-2">
+            <a href="#">
+              <img
+                src="images/banner/banner-cam-trai-relaxviet (5).png"
+                class="img-fluid"
+                alt="Banner 1"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img
+                src="images/banner/banner-cam-trai-relaxviet (7).png"
+                class="img-fluid"
+                alt="Banner 2"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <main class="container text-center my-4">
+      <div class="row justify-content-center">
+        <!-- Product Card -->
+        <div class="col-6 col-sm-3 col-md-3 col-lg-1 mb-3">
+          <div class="d-flex flex-column align-items-center">
+            <img
+              src="images/nav-link/Leu_cam_trai.jpg"
+              class="mb-2 img-fluid"
+              alt="Lều dã ngoại"
+            />
+            <a class="nav-link text-nowrap" href="tent.html">Lều dã ngoại</a>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-3 col-lg-1 mb-3">
+          <div class="d-flex flex-column align-items-center">
+            <img
+              src="images/nav-link/bat-cam-trai.jpg"
+              class="mb-2 img-fluid"
+              alt="Bạt tăng"
+            />
+            <a class="nav-link text-nowrap" href="tarpaulin.html">Bạt tăng</a>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-3 col-lg-1 mb-3">
+          <div class="d-flex flex-column align-items-center">
+            <img
+              src="images/nav-link/ghe-cam-trai.jpg"
+              class="mb-2 img-fluid"
+              alt="Ghế cắm trại"
+            />
+            <a class="nav-link text-nowrap" href="campingChair.html"
+              >Ghế cắm trại</a
+            >
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-3 col-lg-1 mb-3">
+          <div class="d-flex flex-column align-items-center">
+            <img
+              src="images/nav-link/ban-cam-trai.jpg"
+              class="mb-2 img-fluid"
+              alt="Bàn cắm trại"
+            />
+            <a class="nav-link text-nowrap" href="campingChair.html"
+              >Bàn cắm trại</a
+            >
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-3 col-lg-1 mb-3">
+          <div class="d-flex flex-column align-items-center">
+            <img
+              src="images/nav-link/nem-hoi-cam-trai.jpg"
+              class="mb-2 img-fluid"
+              alt="Niệm hơi"
+            />
+            <a class="nav-link text-nowrap" href="bed.html">Niệm hơi</a>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-3 col-lg-1 mb-3">
+          <div class="d-flex flex-column align-items-center">
+            <img
+              src="images/nav-link/xe-keo.jpg"
+              class="mb-2 img-fluid"
+              alt="Xe kéo"
+            />
+            <a class="nav-link text-nowrap" href="rickshaw.html">Xe kéo</a>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-3 col-lg-1 mb-3">
+          <div class="d-flex flex-column align-items-center">
+            <img
+              src="images/nav-link/tam-lot.jpg"
+              class="mb-2 img-fluid"
+              alt="Tấm lót"
+            />
+            <a class="nav-link text-nowrap" href="tarpaulin.html">Tấm lót</a>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-3 col-lg-1 mb-3">
+          <div class="d-flex flex-column align-items-center">
+            <img
+              src="images/nav-link/giuong-cam-trai.jpg"
+              class="mb-2 img-fluid"
+              alt="Giường dã ngoại"
+            />
+            <a class="nav-link text-nowrap" href="bed.html">Giường dã ngoại</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- produc lieu cam trai ----------------------------------------------- -->
+    <main>
+      <div class="container">
+        <div class="container mt-5">
+          <div class="title-section">
+            <h2>LỀU CẮM TRẠI</h2>
+            <div class="divider">
+              <span></span>
+              <div class="diamond"></div>
+              <span></span>
+            </div>
+          </div>
+          <div
+            id="productCarousel1"
+            class="carousel slide mt-4"
+            data-bs-ride="carousel"
+          >
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3 mt-2">
+                      <div class="card">
+                        <img
+                          src="images/Lieu-cam-trai/TXZ-1100/leu-cam-trai-tu-bung-tanxianzhe-txz-1100.jpg"
+                          class="card-img-top"
+                          alt="Makeup Product"
+                          href="txz1100.html"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Lều cắm trại tự bung Tanxianzhe TXZ-1100
+                          </h5>
+                          <p class="card-text">
+                            Lều cắm trại giã đỡ thuỷ lực...
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <a href="txz1100.html"
+                            ><button class="btn btn-primary">
+                              Mua Ngay
+                            </button></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mt-2">
+                      <div class="card">
+                        <img
+                          src="images/Lieu-cam-trai/TXZ-1113/leu-cam-trai-da-ngoai-tu-bung-tanxianzhe-txz-1113.jpg"
+                          class="card-img-top"
+                          alt="Makeup Product"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Lều cắm trại - dã ngoại tự bung Tanxianzhe TXZ-1113
+                          </h5>
+                          <p class="card-text">
+                            Lều tự bung Ango 3 người Tanxianzhe...
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <a href="txz1113.html"
+                            ><button class="btn btn-primary">
+                              Mua Ngay
+                            </button></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mt-2">
+                      <div class="card">
+                        <img
+                          src="images/Lieu-cam-trai/TXZ-1147/leu-cam-trai-da-ngoai-tu-bung-tanxianzhe-txz-1147.jpg"
+                          class="card-img-top"
+                          alt="Makeup Product"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Lều cắm trại - dã ngoại tự bung Tanxianzhe TXZ-1147
+                          </h5>
+                          <p class="card-text">Lều cắm trại - dã ngoại tự...</p>
+                        </div>
+                        <div class="card-footer">
+                          <a href="txz1147.html"
+                            ><button class="btn btn-primary">
+                              Mua Ngay
+                            </button></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mt-2">
+                      <div class="card">
+                        <img
+                          src="images/Lieu-cam-trai/TXZ-1188/banner-cam-trai-relaxviet (1).png"
+                          class="card-img-top"
+                          alt="Makeup Product"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Lều cắm trại - dã ngoại tự bung Tanxianzhe TXZ-1188
+                          </h5>
+                          <p class="card-text">Lều cắm trại - dã ngoại tự...</p>
+                        </div>
+                        <div class="card-footer">
+                          <a href="txz1188.html"
+                            ><button class="btn btn-primary">
+                              Mua Ngay
+                            </button></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+
+              <!-- none -->
+              <!-- Add more slides as needed -->
+            </div>
+            <!-- Left and right controls/icons -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#productCarousel1"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#productCarousel1"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--------------------------------------------------------------------------- vọng giường cấm trại -->
+      <div class="container">
+        <div class="container mt-5">
+          <div class="title-section">
+            <h2>Võng - Giường Cấm Trại</h2>
+            <div class="divider">
+              <span></span>
+              <div class="diamond"></div>
+              <span></span>
+            </div>
+          </div>
+          <div
+            id="productCarousel2"
+            class="carousel slide mt-4"
+            data-bs-ride="carousel"
+          >
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3 mt-2">
+                      <div class="card">
+                        <img
+                          src="images/vong-giuong-cam-trai/txz-0005/nem-bom-hoi-cam-trai-da-ngoai-ca-nhan-tanxianzhe-txz-0005.jpg"
+                          class="card-img-top"
+                          alt="Makeup Product"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Nệm bơm hơi cắm trại dã ngoại cá nhân Tanxianzhe
+                            TXZ-0005
+                          </h5>
+                          <p class="card-text">
+                            Nệm bơm hơi cắm trại dã ngoại..
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <a href="txz0005.html"
+                            ><button class="btn btn-primary">
+                              Mua Ngay
+                            </button></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mt-2">
+                      <div class="card">
+                        <img
+                          src="images/vong-giuong-cam-trai/txz_0005b/nem-bom-hoi-cam-trai-da-ngoai-cap-doi-tanxianzhe-txz-0005b.jpg"
+                          class="card-img-top"
+                          alt="Makeup Product"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Nệm bơm hơi cắm trại dã ngoại cặp đôi Tanxianzhe
+                            TXZ-0005B
+                          </h5>
+                          <p class="card-text">
+                            Nệm bơm hơi cắm trại dã ngoại cặp đôi...
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <a href="txz0005b.html"
+                            ><button class="btn btn-primary">
+                              Mua Ngay
+                            </button></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mt-2">
+                      <div class="card">
+                        <img
+                          src="images/vong-giuong-cam-trai/txz_fdc2002/giuong-cam-trai-da-ngoai-xep-gon-tanxianzhe-txz-fdc2002.jpg"
+                          class="card-img-top"
+                          alt="Makeup Product"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Giường cắm trại, dã ngoại xếp gọn Tanxianzhe
+                            TXZ-FDC2002
+                          </h5>
+                          <p class="card-text">
+                            Giường cắm trại, dã ngoại xếp...
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <a href="txzfcd2002.html"
+                            ><button class="btn btn-primary">
+                              Mua Ngay
+                            </button></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mt-2">
+                      <div class="card">
+                        <img
+                          src="images/vong-giuong-cam-trai/txz_zt109/ban-cam-trai-da-ngoai-gap-gon-tanxianzhe-txz-6018.jpg"
+                          class="card-img-top"
+                          alt="Makeup Product"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Gối ngủ bơm hơi, gối cắm trại dã ngoại Tanxianzhe
+                            TXZ-ZT109
+                          </h5>
+                          <p class="card-text">
+                            Gối ngủ bơm hơi, gối cắm trại dã ngoại
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <a href="TXZ1009.html"
+                            ><button class="btn btn-primary">
+                              Mua Ngay
+                            </button></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+
+              <!-- none -->
+              <!-- Add more slides as needed -->
+            </div>
+            <!-- Left and right controls/icons -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#productCarousel2"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#productCarousel2"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ---------------------------------------------------------------------------------------------------Bàn ghế cấm trại -->
+        <div class="container mt-5">
+          <div class="title-section">
+            <h2>Bàn Ghế Cấm Trại</h2>
+            <div class="divider">
+              <span></span>
+              <div class="diamond"></div>
+              <span></span>
+            </div>
+          </div>
+          <div
+            id="productCarousel3"
+            class="carousel slide mt-4"
+            data-bs-ride="carousel"
+          >
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3 mt-2">
+                      <div class="card">
+                        <img
+                          src="images/Ban-ghe-cam-trai/txz-6026/ban-cam-trai-da-ngoai-xep-gon-tanxianzhe-txz-6026.jpg"
+                          class="card-img-top"
+                          alt="Makeup Product"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Bàn cắm trại, dã ngoại xếp gọn Tanxianzhe TXZ-6026
+                          </h5>
+                          <p class="card-text">
+                            Dã ngoại camping là cơ hội để tận hưởng...
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <a href="txz6026.html"
+                            ><button class="btn btn-primary">
+                              Mua Ngay
+                            </button></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mt-2">
+                      <div class="card">
+                        <img
+                          src="images/Ban-ghe-cam-trai/txz_0508h/ghe-cam-trai-da-ngoai-xep-gon-tanxianzhe-txz-0508h.jpg"
+                          class="card-img-top"
+                          alt="Makeup Product"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Ghế cắm trại, dã ngoại xếp gọn Tanxianzhe TXZ-0508H
+                          </h5>
+                          <p class="card-text">
+                            Ghế tựa lưng cao cắm trại cao cấp...
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <a href="txz0508h.html"
+                            ><button class="btn btn-primary">
+                              Mua Ngay
+                            </button></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mt-2">
+                      <div class="card">
+                        <img
+                          src="images/Ban-ghe-cam-trai/txz_6018/ban-cam-trai-da-ngoai-gap-gon-tanxianzhe-txz-6018.jpg"
+                          class="card-img-top"
+                          alt="Makeup Product"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Bàn cắm trại, dã ngoại, gấp gọn Tanxianzhe TXZ-6018
+                          </h5>
+                          <p class="card-text">
+                            Bàn gấp du lịch tiện lợi với bề mặt vuông vức...
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <a href="txz6018.html"
+                            ><button class="btn btn-primary">
+                              Mua Ngay
+                            </button></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mt-2">
+                      <div class="card">
+                        <img
+                          src="images/Ban-ghe-cam-trai/txz_6020/ban-cam-trai-da-ngoai-xep-gon-tanxianzhe-txz-6020.jpg"
+                          class="card-img-top"
+                          alt="Makeup Product"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Bàn cắm trại, dã ngoại xếp gọn Tanxianzhe TXZ-6020
+                          </h5>
+                          <p class="card-text">
+                            Bàn cắm trại, dã ngoại mini lưới xếp gọn
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <a href="txz6020.html"
+                            ><button class="btn btn-primary">
+                              Mua Ngay
+                            </button></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <!-- <div class="carousel-item">
+              </div> -->
+              <!-- Add more slides as needed -->
+            </div>
+            <!-- Left and right controls/icons -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#productCarousel3"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#productCarousel3"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------------------------------------  share-exp -->
+      <div class="container">
+        <div class="section-title">
+          CHIA SẺ KINH NGHIỆM
+          <span> </span>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              alt="Outdoor cooking setup with various meats and vegetables ready to be grilled"
+              class="article-image"
+              height="400"
+              width="600"
+              src="images/blog/relaxviet-cam-trai-tiet-nuong.png"
+            />
+            <div class="article-title">
+              Các loại bếp hiện RELAXVIET.Vn đang bán.
+            </div>
+            <div class="article-content">
+              Nói đến đi dã ngoại là phải nghĩ ngay tới đồ nướng rồi. Đây thật
+              sự là một món vừa ngon vừa dễ làm và rất thích hợp với những
+              chuyến đi cắm trại vì độ tiện lợi và sức hấp dẫn của nó.Tuy nhiên
+              để lựa chọn cho mình một chiếc bếp dã ngoại, bếp du lịch tốt và dễ
+              sử dụng thì cũng cần nhiều thời gian để tìm hiểu. Bài viết này sẽ
+              so sánh một số loại bếp dã ngoại phổ biến, và đưa ra một số vấn đề
+              cần lưu ý khi sử dụng những loại bếp này để bạn có thể đưa ra
+              quyết định đúng đắn nhất.
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img
+              alt="Camping setup with a tent, backpack, and camping gear"
+              class="article-image"
+              height="400"
+              width="600"
+              src="images/blog/cam-trai-rellaxviet.png"
+            />
+            <div class="article-title">
+              Làm gì khi đi Camping. Xem qua bài viết này của RELAXVIET để biết.
+            </div>
+            <div class="article-content">
+              Không khách sạn, không nhà hàng, dựng lều, cắm trại ngủ giữa núi
+              đồi, sông suối và ăn đồ ăn tự chế biến... Gần đây, bạn trẻ ngày
+              càng yêu thích những chuyến du lịch “ngắn sao” như thế. Vậy bạn có
+              thắc mắc khi đi Camping, các bạn trẻ thường làm gì không? Cùng
+              RELAXVIET.VN tìm hiểu trong bài viết này nhé!!!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img
+              alt="Outdoor equipment setup with tents and camping gear"
+              class="article-image"
+              height="400"
+              width="600"
+              src="images/blog/fle-relaxviet.png"
+            />
+            <div class="article-title">
+              BBQ cho buổi dã ngoại. Bạn cần gì? Xem qua bài viết của
+              RELAXVIET.VN để biết.
+            </div>
+            <div class="article-content">
+              Tiệc nướng BBQ đã trở thành một hình thức ăn uống phổ biến không
+              chỉ ở Tp.HCM nói riêng và cả Việt Nam nói chung, đặc biệt là đối
+              với các bạn trẻ ngày nay.Điều không thể thiếu tạo nên không khí
+              vui vẻ của buổi tiệc nướng không thể không kể đến những vật dụng,
+              thực phẩm ăn uống. Nếu bạn đang chuẩn bị tổ chức một buổi tiệc BBQ
+              ngoài trời cùng bạn bè, người thân, đồng nghiệp và muốn buổi tiệc
+              thật thú vị thì đừng bỏ qua bài viết này của RELAXVIET.Vn tìm hiểu
+              những kinh nghiệm chuẩn bị cho tiệc BBQ và hiểu rõ hơn tiệc nướng
+              BBQ cần những gì qua bài viết sau đây nhé!
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------------------------------------------------------------- Giao Hàng -->
+      <div class="container-ship">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="container_shipper col-md-3">
+              <div class="feature-box">
+                <i class="fas fa-shipping-fast"></i>
+                <h5>Giao hàng hỏa tốc</h5>
+                <p>Từ 2-4h sau khi đặt hàng thành công</p>
+              </div>
+            </div>
+            <div class="container_shipper col-md-3">
+              <div class="feature-box">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h5>Dịch vụ CSKH</h5>
+                <p>Tận tình, chương trình hậu mãi chu đáo</p>
+              </div>
+            </div>
+            <div class="container_shipper col-md-3">
+              <div class="feature-box">
+                <i class="fas fa-exchange-alt"></i>
+                <h5>Đổi trả hàng lỗi</h5>
+                <p>Miễn phí trong vòng 07 ngày do lỗi nhà sản xuất</p>
+              </div>
+            </div>
+            <div class="container_shipper col-md-3">
+              <div class="feature-box">
+                <i class="fas fa-certificate"></i>
+                <h5>Sản phẩm chính hãng</h5>
+                <p>Thương hiệu chính hãng, độc quyền</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap JS (necessary for collapse functionality) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <footer>
+    <div class="container footer">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="logo">
+            <img
+              alt="Company Logo"
+              width="100px"
+              height="60px"
+              src="images/logo/logo_relaxviet.png"
+            />
+          </div>
+          <div class="contact-info mt-2">
+            <p>CÔNG TY TNHH THƯ GIÃN VIỆT</p>
+            <p>
+              Giấy ĐKKD : 0317805028 , ngày cấp : 25/04/2023 , nơi cấp : Sở
+              KH&amp;ĐT TPHCM
+            </p>
+            <p>
+              Địa chỉ: 267/5 Lê Thị Riêng (TA28) , P. Thới An, Quận 12, TP.HCM
+            </p>
+            <p>Điện thoại: 0938 513 828 - 0919 011 300</p>
+            <p>Email: relaxvietco@gmail.com</p>
+            <p>Giờ làm việc: Thứ 2 đến thứ 7: 8:30-18:00</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="contact-info"><b>Sản phẩm </b></div>
+          <div class="guide-list mt-2">
+            <ul>
+              <li>Lều cắm trại</li>
+              <li>Bạt tăng</li>
+              <li>Võng - Giường dã ngoại</li>
+              <li>Bếp dã ngoại</li>
+              <li>Bàn ghế dã ngoại</li>
+              <li>Xe kéo</li>
+              <li>Phụ kiện cắm trại</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="contact-info"><b>Hướng dẫn</b></div>
+          <div class="guide-list mt-2">
+            <ul>
+              <li>Chính sách thanh toán</li>
+              <li>Chính sách bảo mật</li>
+              <li>Chính sách đổi / trả hàng</li>
+              <li>Chính sách vận chuyển</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 float-end">
+          <div class="contact-info"><b>Chia sẻ chúng tôi</b></div>
+          <div class="socials social-icons ml-2 mt-3">
+            <a href="#">
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube"> </i>
+            </a>
+            <a href="#">
+              <i class="fas fa-envelope"> </i>
+            </a>
+            <a href="#">
+              <i class="fas fa-mobile-alt"> </i>
+            </a>
+          </div>
+          <div class="mt-2">
+            <img
+              alt="Certification Badge"
+              height="100"
+              src="images/logo/bo-cong-thuong.png"
+              width="250"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="copyright">Copyright by Relax Viet Co., LTD @ 2023</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,27 @@
+/** @format */
+
+.sort-dropdown {
+  float: left;
+  margin-bottom: 50px;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+.header select {
+  width: 150px;
+}
+.rating {
+  color: #ff9800;
+  margin-top: 8px;
+}
